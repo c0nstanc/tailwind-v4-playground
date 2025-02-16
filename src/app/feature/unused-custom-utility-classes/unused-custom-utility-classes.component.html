@@ -1,0 +1,27 @@
+<header class="text-center mt-4">
+  <h1 class="title">{{ title }}</h1>
+</header>
+
+<main class="mt-4 container">
+  <div class="articles | flex gap-8 flex-col items-center mt-8">
+    <article class="w-full max-w-[initial] text-center">
+      In order to verify that the custom utility class is not added in the final
+      bundle when its not used in the actual codebase of the project you can:
+    </article>
+
+    <div class="options | flex gap-8">
+      <article>
+        <b>Option 1: </b>
+        Use browser dev tools and try to use the custom class somewhere in this
+        article.
+      </article>
+      <article>
+        <b>Option 2: </b>
+        Just build the project using
+        <code>ng build</code> and examine the generated
+        <code>styles.css</code> file by searching the custom class. It should
+        not be there.
+      </article>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@layers base, components, utilities;
+
+@layer base {
+  code {
+    @apply bg-gray-200 p-0.5 italic font-bold;
+  }
+
+  article {
+    @apply text-lg max-w-md;
+  }
+
+  .title {
+    @apply text-4xl text-gray-800;
+  }
+}
+@utility my-custom-class {
+  background-color: red;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
