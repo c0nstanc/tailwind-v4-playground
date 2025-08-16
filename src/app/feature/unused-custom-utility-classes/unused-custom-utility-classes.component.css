@@ -1,0 +1,5 @@
+@reference "#styles.css";
+
+.options {
+  @apply border-2 border-gray-500 p-4 rounded-lg;
+}
